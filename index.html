@@ -1,0 +1,85 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Buah Lontar Nusantara</title>
+  <style>
+    * { box-sizing: border-box; font-family: Arial, sans-serif; }
+    body { margin: 0; background: #f4f4f4; }
+    header { background: #2c3e50; color: white; padding: 20px; text-align: center; }
+    nav { background: #34495e; padding: 10px; }
+    nav a {
+      color: white; margin: 0 15px; text-decoration: none; font-weight: bold;
+    }
+    nav a:hover { text-decoration: underline; }
+    .container { padding: 20px; }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
+    .gallery img { width: 100%; border-radius: 8px; }
+    form {
+      background: white; padding: 20px; max-width: 400px; border-radius: 8px;
+    }
+    input, textarea, button {
+      width: 100%; padding: 10px; margin: 10px 0;
+    }
+    footer {
+      background: #2c3e50; color: white; text-align: center; padding: 15px;
+    }
+  </style>
+</head>
+<body><header>
+  <h1>Buah Lontar Nusantara</h1>
+  <p id="time"></p>
+</header><nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#contact">Contact</a>
+</nav><div class="container" id="home">
+  <h2>Selamat Datang</h2>
+  <p>Selamat datang di website Buah Lontar Nusantara. Website ini dibuat sebagai media informasi dan edukasi mengenai buah lontar atau siwalan yang merupakan salah satu kekayaan alam Indonesia.</p>
+  <p>Buah lontar dikenal memiliki rasa segar dan kandungan air yang tinggi sehingga banyak dikonsumsi sebagai minuman pelepas dahaga, terutama di daerah dengan iklim panas.</p>
+  <p>Melalui website ini, pengunjung dapat mengetahui berbagai informasi seputar buah lontar, mulai dari karakteristik buah, manfaat, hingga potensi pengembangannya sebagai produk lokal unggulan.</p>
+</div><div class="container" id="about">
+  <h2>Tentang Buah Lontar</h2>
+  <p>Buah lontar, yang juga dikenal dengan nama siwalan, merupakan buah khas daerah tropis Indonesia, terutama banyak ditemukan di wilayah Jawa Timur, Nusa Tenggara, dan Sulawesi.</p>
+  <p>Buah ini berasal dari pohon lontar (Borassus flabellifer) yang mampu tumbuh di daerah panas dan kering. Daging buah lontar memiliki tekstur lembut, rasa manis alami, serta kandungan air yang tinggi sehingga sangat cocok dikonsumsi sebagai minuman penyegar.</p>
+  <p>Selain dikonsumsi langsung, buah lontar juga dapat diolah menjadi berbagai produk seperti es siwalan, sirup lontar, hingga makanan tradisional. Pohon lontar sendiri memiliki nilai ekonomi tinggi karena hampir seluruh bagiannya dapat dimanfaatkan, mulai dari daun, batang, hingga niranya.</p>
+  <p>Melalui website ini, diharapkan masyarakat dapat mengenal lebih jauh manfaat buah lontar serta potensinya sebagai komoditas lokal yang bernilai dan berkelanjutan.</p>
+</div><div class="container" id="gallery">
+  <h2>Gallery Buah Lontar</h2>
+  <div class="gallery">
+    <div>
+      <img src="gambar/background.jpg">
+      <p>Ini merupakan bentuk buah lontar sebelum di keluarkan dari tandannya</p>
+    </div>
+    <div>
+      <img src="gambar/buah lontar.jpg">
+      <p>Buah lontar setelah dikupas</p>
+    </div>
+    <div>
+      <img src="gambar/air legen.jpg">
+      <p>Ait nira yang berasal dari batan buah lontar </p>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+  </div>
+</div><div class="container" id="contact">
+  <h2>Form Kontak</h2>
+  <form>
+    <input type="text" placeholder="Nama" required>
+    <input type="email" placeholder="Email" required>
+    <textarea placeholder="Pesan"></textarea>
+    <button type="submit">Kirim</button>
+  </form>
+</div><footer>
+  <p>© 2025 Aditya Putri Natha | NIM: 251011701253 | Kelas: 01SIFP002</p>
+</footer><script>
+  function updateTime() {
+    const now = new Date();
+    document.getElementById("time").innerHTML = now.toLocaleString();
+  }
+  setInterval(updateTime, 1000);
+  updateTime();
+</script></body>
+</html>
